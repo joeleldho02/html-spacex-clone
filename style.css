@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display:flex;
+    padding: 30px;
+    position: fixed;
+    z-index: 1;
+}
+nav img{
+    width:100%;
+    filter:invert(100%) sepia(0%) saturate(0%) 
+        hue-rotate(35deg) brightness(110%) contrast(101%);
+}
+.logo-box{
+    width:250px;
+    margin-left:100px;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:20px;
+    list-style-type: none;
+    margin-right:40px;
+}
+ul :nth-child(8){
+    margin-right:250px;
+}
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+.underline:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: -4px;
+    background: #ffffff;
+    height: 1px;
+    transition-duration: 0.3s;
+} 
+.underline:hover:after{
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+.box{
+    height:100vh; 
+    width:100%;
+    position: relative;
+}
+.box img{
+    width:100%;
+    height: 100%;
+}
+
+.text-box{
+    display: block;
+    position: absolute;
+    bottom:100px;
+    left:100px;
+}
+.text-box h4{
+    color:white;
+    font-weight:400;
+    font-size: 20px;
+}
+.text-box h1{
+    color:white;
+    font-size: 48px;
+    font-weight:600;
+    margin-top:10px;
+    line-height: 48px;
+}
+.text-box button{
+    border: 2px solid white;
+    background-color: transparent;
+    color:white;
+    font-weight:670;
+    font-size: 12px;
+    transition:0.2s;
+    height: 50px;
+    width:130px;
+    margin-top:30px;
+    cursor:pointer;
+}
+.text-box button:hover{
+    color:black;
+    background-color: white;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width:100%;
+    gap: 30px;
+    padding: 30px 0px;
+}
+footer span,li{
+    color:white;
+    font-size:12px;
+    font-weight:700;
+    transition: 0.6s;
+    cursor:pointer;
+}
+footer span:hover{
+    color:#aaafb5;
+}
+footer p{
+    color:white;
+    font-size:11px;
+    cursor:default
+}
